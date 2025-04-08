@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div id='imgViewer' class="imgViewer hidden"> </div>
+    <header>
+        <nav>
+            <!-- MARK: Navigation 
+               -->
+
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn"><span class="material-symbols-outlined">menu</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="index.html"> Home</a>
+                        <a href="timeline.html">Timeline</a>
+                        <a href="passions.html">Passions</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="container">
+                <button class="darkmode button" onclick="ToggleDarkMode()" aria-label="ToggleDarkMode"><span
+                        id="btn_darkmode" class="material-symbols-outlined"> DARK MODE</span></button>
+            </div>
+        </nav>
+        <h1>Dylan Helmer</h1>
+    </header>
+    <main>
+        <div id="gallery" class="grid three-col gallery">
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/gallery_1.png" alt="Animation" data-catergory = "Art"
+                        data-full_image="gallery_1.png">
+
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/gallery_2.png" alt=" Comic Book" data-full_image="gallery_2.png" data-caption="IMade this">
+                </picture>
+
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/gallery_3.png"  alt="Travel Website"
+                        data-full_image="gallery_3.png">
+    
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/gallery_4.png" alt="Mixed Media Painting"
+                        data-full_image="gallery_4.png">
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/gallery_5.png" alt="Fazbear Frights Website"
+                        data-full_image="gallery_5.png">
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/gallery_6.jpg" alt="Dystopian Book Cover"
+                        data-full_image="gallery_6.jpg">
+                </picture>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="javascript/dark_mode.js"></script>
+    <script src="javascript/gallery.js"></script>
+
+</body>
+
+</html>

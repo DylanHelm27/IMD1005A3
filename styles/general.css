@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Tektur:wght@400..900&display=swap');
+
+/* MARK: Root Colours */
+:root {
+    --purple: #73168C;
+    --purple2: #9F2CBF;
+    --purple3: #C04BF2;
+    --dpurple: #281259;
+    --dpurple2: #070926;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* MARK: General Body and Fonts */
+body {
+    font-family: "Tektur", "Sans Serif", sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    transition: background-color 0.9s, color 0.9s;
+}
+
+/* Dark mode styles */
+body.darkMode {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+}
+
+p {
+    padding: 15px;
+}
+
+/* Card text color */
+.card p {
+    color: var(--white);
+}
+
+/* MARK: Main Layout */
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main div {
+    justify-items: center;
+}
+
+/* MARK: Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--purple2);
+    border-bottom: 5px solid var(--purple3);
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+nav .button
+{
+    margin: 0;
+    padding: 4px;
+    border: 3px solid var(--purple);
+    box-shadow: 0 3px 5px var(--black);
+
+
+}
+
+body.darkMode nav .button
+{
+    background-color:var(--dpurple2);
+    border: 3px solid var(--dpurple);
+
+}
+
+.navbar {
+    background-color: var(--purple2);
+}
+
+.navbar a {
+    font-size: 16px;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    padding: 1px;
+    margin-left: 5px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--purple2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    z-index: 20;
+}
+
+.dropdown-content a {
+    color: var(--white);
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* MARK: Dropdown Hover */
+.dropdown-content a:hover {
+    background-color: var(--purple3);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.dropdown-content a:visited
+{
+    background-color: var(--purple2);
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container
+{
+    position: absolute;
+    right:0;
+    top:0;
+}
+/* MARK: Dark Mode Navbar & Dropdown */
+
+body.darkMode nav
+{
+    background-color: var(--dpurple);
+    border-bottom: 5px solid var(--dpurple2);
+}
+body.darkMode .navbar {
+    background-color: var(--dpurple);
+}
+
+body.darkMode .dropdown-content {
+    background-color: var(--dpurple);
+}
+
+body.darkMode .dropdown-content a:hover {
+    background-color: var(--purple);
+}
+
+/* MARK: Card Styling */
+.card {
+    justify-items: center;
+    background-color: var(--purple2);
+    color: var(--white);
+    border: 5px solid var(--purple);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 0 3px 10px var(--black);
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    border-color: var(--purple3);
+    box-shadow: 0 3px 10px var(--black);
+}
+
+.card img {
+    border: 5px solid var(--purple);
+}
+
+/* Dark Mode Card Styling */
+body.darkMode .card {
+    background-color: var(--dpurple2);
+    border-color: var(--dpurple);
+    box-shadow: 0 3px 10px var(--dpurple);
+}
+
+body.darkMode .card img {
+    border-color: var(--dpurple);
+}
+
+body.darkMode .card:hover {
+    transform: scale(1.01);
+    border-color: var(--purple);
+    box-shadow: 0 3px 10px var(--purple);
+}
+
+/* MARK: Button */
+
+.button {
+    background-color: var(--white);
+    border: 5px solid var(--purple);
+    color: var(--black);  
+    border-radius: 10px;
+    margin: 25px;
+    padding: 15px 25px;  
+    box-shadow: 0 3px 10px var(--black);
+    transition: all 0.2s ease-in-out; 
+    text-align: center;  
+    display: inline-block;  
+    text-decoration: none;  
+    cursor: pointer;
+}
+
+/* Hover Effect for Button */
+.button:hover {
+    transform: scale(1.05); 
+    border-color: var(--purple3);
+    box-shadow: 0 5px 20px var(--black);  /* More pronounced shadow on hover */
+}
+
+/* Dark Mode Button Styling */
+body.darkMode .button {
+    color: var(--white);
+    border-color: var(--dpurple);
+    box-shadow: 0 3px 10px var(--dpurple);
+}
+
+body.darkMode .button:hover {
+    transform: scale(1.05); 
+    border-color: var(--purple);  
+    background-color: var(--white);  
+    color: var(--black);  
+    box-shadow: 0 5px 20px var(--purple);  
+}
+
+/* Remove the link underline inside the button */
+button a {
+    text-decoration: none;
+}
+
+/* Add a focus-visible state for better keyboard accessibility */
+.button:focus-visible {
+    outline: 3px solid var(--purple3);  /* Outline for focused button (for accessibility) */
+}
+
+/* MARK: Material Icons */
+body.darkMode .button .material-icons
+{color: var(--white);}
+
+/* MARK: Footer */
+footer {
+    text-align: center;
+}
+
+/* MARK: Miscellaneous */
+
+/* Hidden */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.imgViewer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 99;
+
+    display: grid;
+    place-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    transition: opacity 0.5s;
+}
+
+.imgViewer img
+{
+    width: 800px;
+    height: auto;
+    max-height: 800px;
+}

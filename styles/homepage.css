@@ -1,0 +1,65 @@
+/* MARK: Homepage 
+ */
+
+ .main
+ {
+    justify-content: center;
+    margin:  50px;
+ }
+img {
+    border-radius: 10px;
+}
+
+.textbox {
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.heroimg {
+    max-width: 400px;
+    border: 5px solid var(--purple);
+    border-radius: 16px;
+    margin-bottom: 10px;
+
+}
+
+.heroimg:hover {
+    transform: scale(1.01);
+    border-color: var(--purple3);
+    box-shadow: 0 3px 10px var(--black);
+}
+
+body.darkMode .heroimg:hover {
+    transform: scale(1.01);
+    border-color: var(--purple);
+    box-shadow: 0 3px 10px var(--purple);
+}
+
+@media screen and (width >=1100px) {
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+
+    }
+
+    .three-col {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px;
+\    }
+
+
+    .card {
+        justify-items: center;
+
+    }
+
+    .heroimg {
+        justify-self: center;
+        max-width: 300px;
+    }
+
+}
