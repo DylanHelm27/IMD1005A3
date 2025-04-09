@@ -8,90 +8,86 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/homepage.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 
 <body>
     <header>
         <nav>
-              <!-- MARK: Navigation 
-               -->
-
+            <!-- MARK: Navigation -->
             <div class="navbar">
                 <div class="dropdown">
-                    <button class="button dropbtn"><span class="material-symbols-outlined">menu</span>
+                    <button class="button dropbtn" aria-label="Open navigation menu">
+                        <span class="material-symbols-outlined">menu</span>
                     </button>
                     <div class="dropdown-content">
-                        <a href = "index.html"> Home</a>
+                        <a href="index.html">Home</a>
                         <a href="timeline.html">Timeline</a>
                         <a href="passions.html">Passions</a>
                         <a href="gallery.html">Gallery</a>
                     </div>
-            
                 </div>
-
             </div>
-            <div class = title><h1>Dylan Helmer</h1></div>
-
+            <div class="title">
+                <h1>Dylan Helmer</h1>
+            </div>
             <div class="container">
-                <button class="button darkmode" onclick="ToggleDarkMode()" aria-label="ToggleDarkMode"><span id="btn_darkmode" class = "material-symbols-outlined"> DARK MODE</span></button>
+                <button class="button darkmode" onclick="ToggleDarkMode()" aria-label="Toggle dark mode">
+                    <span id="btn_darkmode" class="material-symbols-outlined">DARK MODE</span>
+                </button>
             </div>
         </nav>
     </header>
+
     <main>
-        <div class=main>
-                <!-- MARK: Hi There!
-               -->
-            <div class = heroimg>
-                <img src="images/hi_there.jpeg" alt="Me">
+        <section class="main">
+            <!-- MARK: Hi There! Section -->
+            <div class="heroimg">
+                <img src="images/hi_there.jpeg" alt="Portrait of Dylan Helmer">
             </div>
 
-            <div class = textbox>
+            <div class="textbox">
                 <h2>Hi There!</h2>
-                <p>Hello! I'm Dylan, a 23-year-old student at Carleton University. I have a passion for graphic design, coding, and web design. Before starting university, I worked as a manager in both food service and retail. My journey with websites began when I was just 4 years old, when my dad, a small business owner with no coding experience, created a webpage for me based on my ideas. While he was learning to code a website for his own company, it ignited my fascination with coding. I hope you enjoy my website! </p> 
+                <p>Hello! I'm Dylan, a 23-year-old student at Carleton University. I have a passion for graphic design, coding, and web design. Before starting university, I worked as a manager in both food service and retail. My journey with websites began when I was just 4 years old, when my dad, a small business owner with no coding experience, created a webpage for me based on my ideas. While he was learning to code a website for his own company, it ignited my fascination with coding. I hope you enjoy my website!</p> 
             </div>
-        </div>
-        <div class = three-col>
-                <!-- MARK: Timeline Card 
-               -->
+        </section>
+
+        <section class="three-col">
+            <!-- MARK: Timeline Card -->
             <div class="card">
                 <h3>Timeline</h3>
-                <img src="images/timeline_cover.jpg" alt = "Timeline">
+                <img src="images/timeline_cover.jpg" alt="Young Dylan Helmer">
                 <p>I created a timeline instead of writing an essay about my life story. This page outlines the key years in my life. Click on the segments of the timeline for more information!</p>
-                <a href = timeline.html><button class ="card button"> Enter My Life </button></a>  
+                <a href="timeline.html"><button class="card button">Enter My Life</button></a>  
             </div>
-                <!-- MARK: Passions Card 
-               -->
+
+            <!-- MARK: Passions Card -->
             <div class="card">
                 <h3>Passions</h3>
-                <img src="images/passions.jpeg" alt = "Passions">
+                <img src="images/passions.jpeg" alt="Young Dylan Helmer in a Spider-Man T-Shirt">
                 <p>A significant part of who I am is defined by my passions. I have a wide range of hobbies and interests, and this page is dedicated to showcasing each of them. I’ll share how I discovered these passions and what I love most about each one.</p>
-                <a href = passions.html><button class ="card button"> What're My Passions? </button></a>  
+                <a href="passions.html"><button class="card button">What're My Passions?</button></a>  
             </div>
-                <!-- MARK: Gallery Card 
-               -->
+
+            <!-- MARK: Gallery Card -->
             <div class="card">
                 <h3>Gallery</h3>
-                <img src="images/gallery_2.png" alt = "Gallery">
+                <img src="images/gallery_2.png" alt="A comic book page that acts asexample of a gallery piece,">
                 <p>In my time at Carleton, I've made a lot of different content, in both mediums I'm comfortable and uncomfortable with. Take a look at some of the content I've made in my first year.</p>
-                <a href = gallery.html><button class ="card button"> Browse My Work </button></a>  
-
+                <a href="gallery.html"><button class="card button">Browse My Work</button></a>  
             </div>
-        </div>
-        
-        <div>
-
-        </div>
+        </section>
     </main>
-        <!-- MARK: Footer 
-               -->
+
+    <!-- MARK: Footer -->
     <footer>
         <h3>Dylan Helmer 2025</h3>
-        <div class = social_content></div>
+        <div class="social_content">
+            <!-- Social Media Links could be added here -->
+        </div>
     </footer>
 
     <script src="javascript/dark_mode.js"></script>
-
 </body>
 
 </html>

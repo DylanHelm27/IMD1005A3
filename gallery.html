@@ -15,48 +15,51 @@
     <div id='imgViewer' class="imgViewer hidden"> </div>
     <header>
         <nav>
-            <!-- MARK: Navigation 
+              <!-- MARK: Navigation 
                -->
 
             <div class="navbar">
                 <div class="dropdown">
-                    <button class="dropbtn"><span class="material-symbols-outlined">menu</span>
+                    <button class="button dropbtn"><span class="material-symbols-outlined">menu</span>
                     </button>
                     <div class="dropdown-content">
-                        <a href="index.html"> Home</a>
+                        <a href = "index.html"> Home</a>
                         <a href="timeline.html">Timeline</a>
                         <a href="passions.html">Passions</a>
                         <a href="gallery.html">Gallery</a>
                     </div>
-
-
+            
                 </div>
+
             </div>
+            <div class = title><h1>Gallery</h1></div>
+
             <div class="container">
-                <button class="darkmode button" onclick="ToggleDarkMode()" aria-label="ToggleDarkMode"><span
-                        id="btn_darkmode" class="material-symbols-outlined"> DARK MODE</span></button>
+                <button class="button darkmode" onclick="ToggleDarkMode()" aria-label="ToggleDarkMode"><span id="btn_darkmode" class = "material-symbols-outlined"> DARK MODE</span></button>
             </div>
         </nav>
-        <h1>Dylan Helmer</h1>
     </header>
     <main>
         <div id="gallery" class="grid three-col gallery">
             <div class=gallery-container>
                 <picture>
-                    <img src="images/gallery_1.png" alt="Animation" data-catergory = "Art"
+                    <img src="images/gallery_1.png" alt="2D Animation" 
+                    data-caption = "I created this animation using free online software. The story begins with a title screen featuring a cityscape, titled The Morning Walk. It then transitions to a city street that includes a road, a coffee shop, and a crosswalk sign. As cars drive by, our main character enters the scene and approaches the crosswalk. He looks at the crosswalk sign, and as it remains on the Don't Walk signal, the animation alternates between shots of him and the sign to emphasize his growing frustration. When the sign finally turns green, the character smiles. However, as he starts to cross the street, a car suddenly drives in and hits him" him, sending him flying.
+            
                         data-full_image="gallery_1.png">
 
                 </picture>
             </div>
             <div class=gallery-container>
                 <picture>
-                    <img src="images/gallery_2.png" alt=" Comic Book" data-full_image="gallery_2.png" data-caption="IMade this">
+                    <img src="images/gallery_2.png" alt=" Comic Book" data-full_image="gallery_2.png" class="vert" data-caption="Created a 10 Panel Comic Book for my Visual Communication class, I made it a horror comic about someone investigating a house of a dead person and finding that he was still alive.">
                 </picture>
 
             </div>
             <div class=gallery-container>
                 <picture>
                     <img src="images/gallery_3.png"  alt="Travel Website"
+                        data-caption="I made a travel website about the country of Iceland in my WebDev course. I had a lot of fun using localStorage and designing dark mode, as well as using Javascript effectively"
                         data-full_image="gallery_3.png">
     
                 </picture>
@@ -64,18 +67,36 @@
             <div class=gallery-container>
                 <picture>
                     <img src="images/gallery_4.png" alt="Mixed Media Painting"
-                        data-full_image="gallery_4.png">
+                    data-caption="
+                    a painting of a wrestling ring viewed from the ringside.
+                    I started by sketching a base idea of the angle I wanted the ring to be,
+                    and then, using rulers, I made a rough draft on canvas. After that, I
+                    painted all of the red and black objects; after that, to add texture, I cut up
+                    and layered painter's tape for the ropes to make them look like actual
+                    ropes that are taped as well. After that, I used some splatter of red paint
+                    to give the effect that the ring had been used.
+                    I faced a challenge in creating this, much like my other piece of
+                    traditional art, and I am much more comfortable with digital art. This
+                    was one of many challenges, as I only realized these were watercolours
+                    partially through, so on the painting itself, the paints are used more like
+                    acrylic than watercolour. I didn't, per se, solve this challenge, but I
+                    adapted to the change and still focused on delivering the best product
+                    with the available tools"    
+                    data-full_image="gallery_4.png">
                 </picture>
             </div>
             <div class=gallery-container>
                 <picture>
                     <img src="images/gallery_5.png" alt="Fazbear Frights Website"
+                    data-caption="I made a in universe website about a horror attraction called 'Fazbear Frights' in my WebDev course. I had a lot of fun in creating a cohesive theme, and making it look like the terminal UI used in game, as well as easter eggs, including understanding youtube's iframe API"
+
                         data-full_image="gallery_5.png">
                 </picture>
             </div>
             <div class=gallery-container>
                 <picture>
                     <img src="images/gallery_6.jpg" alt="Dystopian Book Cover"
+                        data-caption="Here's a book cover i made in my Design Processes class, it's meant to be about a dystopian desert wasteland, I took a base photo of ships in a desert, and added the skyline, a tree in the distance, a water bottle and a water tower."
                         data-full_image="gallery_6.jpg">
                 </picture>
             </div>

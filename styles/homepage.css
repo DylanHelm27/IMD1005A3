@@ -1,11 +1,7 @@
 /* MARK: Homepage 
  */
 
- .main
- {
-    justify-content: center;
-    margin:  50px;
- }
+
 img {
     border-radius: 10px;
 }
@@ -13,7 +9,7 @@ img {
 .textbox {
     justify-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 .heroimg {
@@ -29,6 +25,11 @@ img {
     border-color: var(--purple3);
     box-shadow: 0 3px 10px var(--black);
 }
+body.darkMode .heroimg
+{
+    border: 5px solid var(--dpurple);
+
+}
 
 body.darkMode .heroimg:hover {
     transform: scale(1.01);
@@ -36,8 +37,15 @@ body.darkMode .heroimg:hover {
     box-shadow: 0 3px 10px var(--purple);
 }
 
-@media screen and (width >=1100px) {
+@media screen and (width >=1700px) {
 
+    
+    main
+    {
+       margin-left: 100px;
+       margin-right: 100px;
+   
+    }
     .main {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -49,7 +57,7 @@ body.darkMode .heroimg:hover {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 15px;
-\    }
+    }
 
 
     .card {

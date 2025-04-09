@@ -8,13 +8,20 @@
 .ivText
 {
     position: absolute;
-    bottom: 50px;
+    bottom: 25px;
     left: 50px;
-    background-color: var(--purple);
-    min-width: 360px;
+    color: var(--white);
+    background-color: var(--purple) ;
+    margin-right: 60px;
+    min-width: 1600px;
+}
+.ivText h2,p
+{
+    padding: 15px;
+
 }
 
-
+body.darkMode .ivText{background-color: var(--dpurple2);}
 
 .gallery-container {
     width: auto;
@@ -24,7 +31,7 @@
 }
 
 .gallery-container:hover {
-    box-shadow: 0 3px 10px var(--darkpurple);
+    box-shadow: 0 3px 10px var(--dpurple);
 }
 
 .gallery img {

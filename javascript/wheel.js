@@ -1,3 +1,11 @@
+let desc = document.getElementById('desc')
+
+const passions =
+{
+    p1: "test"
+
+}
+
 let theta = Math.PI / 4.0;
 let new_theta = 0.0;
 let new_x = 0.0;
@@ -116,8 +124,15 @@ function snap_back() {
 
         if (closest_card == card) {
             card.style.transform = `translate(-50%, -50%) rotate(${-1.0 * (wheel_theta + theta_between)}deg) scale(1.0)`;
-
+            console.log(card);
             card.style.zIndex = 100;
+            desc.innerHTML = `    
+            
+            <h2>${card.alt}</h2>
+            <p>${passions [card.dataset.caption]}</p>
+            
+        
+        `
         } else {
             card.style.transform = `translate(-50%, -50%) rotate(${-1.0 * (wheel_theta + theta_between)}deg) scale(0.01)`;
             card.style.zIndex = 1;
@@ -130,11 +145,6 @@ function snap_back() {
         snap_in_progress = false;
     }, 200);
 
-    const passions =
-    {
-        p1: "test"
-
-    }
     console.log(passions[closest_card.dataset.caption])
 
 }
