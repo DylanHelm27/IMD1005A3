@@ -315,3 +315,21 @@ footer {
     height: auto;
     max-height: 700px;
 }
+
+/* Skip Link Styles */
+.skip-link {
+    background-color: var(--purple);
+    padding: 10px;
+    display: block;
+    color: var(--bg);
+    z-index: 101;
+    position: absolute;
+    top: -100px;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 0;
+    z-index: 101;
+
+}

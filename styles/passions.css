@@ -18,10 +18,6 @@ body {
 }
 
 .card2 {
-    /* width: 90px;
-    height: 50px;
-    background-color: red; */
-
 
     width: 150px;
     height: 150px;
@@ -35,4 +31,29 @@ body {
     transform: translate(-50%, -50%);
 
     font-size: 2.5em;
+}
+
+.desc {
+    margin-right: 1000px;
+}
+
+body.darkMode h3, body.darkMode p
+{
+    color: var(--white);
+}
+
+body.darkMode .card2
+{
+    border: 2px solid var(--dpurple);
+
+}
+
+@media screen and (width <=900px) {
+
+    .desc {
+        margin-right:0;
+        position: absolute;
+        top:400px;
+        padding:100px
+    }
 }
